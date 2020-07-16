@@ -16,11 +16,11 @@ companion object{
     val scope = CoroutineScope(Dispatchers.IO + Job())
     public  fun extractInBackground(context: Context, activity: Activity, progressDialog: ProgressDialog, appInfo: AppInfo){
 
-     val coroutine=   scope.async {
+     val coroutine=   scope.launch {
                 extract(progressDialog , activity , context , appInfo)
             }
 
-     Log.e("shaimaa" , (coroutine.isActive  ).toString())
+     Log.e("shaimaa" , (coroutine.isActive ).toString())
         }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -28,6 +28,7 @@ companion object{
         withContext(Dispatchers.IO){
             if (UtilsApp.checkPermissions(activity , context)!!){
                 UtilsApp.copyFiles(appInfo)
+
             }else{
  //MlManager Pro
             }

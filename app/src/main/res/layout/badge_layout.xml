@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="?attr/actionButtonStyle"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:clickable="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ru.nikartm.support.ImageBadgeView
+
+        android:id="@+id/cart_menu_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_phone_android_24"
+        tools:ibv_badgeValue="101"
+        app:ibv_maxBadgeValue="99"
+        app:ibv_badgeTextSize="10sp"
+        app:ibv_fixedBadgeRadius="10dp"
+        app:ibv_badgeTextStyle="bold"
+        app:ibv_badgeTextColor="#ffffff"
+        app:ibv_badgeColor="@color/primaryDarkColor"
+        app:ibv_badgeLimitValue="true" />
+
+</FrameLayout>

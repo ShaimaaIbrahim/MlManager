@@ -2,28 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/HiddenFragment"
+        android:id="@+id/proFragment"
         android:icon="@drawable/ic_baseline_visibility_off_24"
         android:title="@string/off"
         android:contentDescription="@string/content_description_off"
-        app:showAsAction="ifRoom"
-        />
-
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/appsFragment"
         android:icon="@drawable/ic_baseline_phone_android_24"
         android:title="@string/device"
         android:contentDescription="@string/content_description_device"
-        app:showAsAction="ifRoom"
-        />
+        app:showAsAction="ifRoom" />
 
     <item
         android:icon="@drawable/ic_android_24dp"
         android:id="@+id/androidFragment"
         android:title="@string/android"
         android:contentDescription="@string/android"
-        app:showAsAction="ifRoom"
-        />
+        app:showAsAction="ifRoom" />
 
 </menu>

@@ -7,10 +7,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    >
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -62,7 +62,7 @@
                         tools:srcCompat="@tools:sample/avatars" />
 
                     <ImageView
-                        android:src="@drawable/ic_baseline_delete_24"
+                        android:src="@drawable/ic_baseline_delete_forever_24"
                         android:id="@+id/delete"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -78,6 +78,7 @@
                         />
 
                     <TextView
+                        android:textColor="@color/primaryDarkColor"
                         android:id="@+id/open_txt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -85,7 +86,7 @@
                         android:layout_marginBottom="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="TextView"
+                        android:text="Open"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/extract_txt"
@@ -93,6 +94,7 @@
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <TextView
+                        android:textColor="@color/primaryDarkColor"
                         android:textSize="15sp"
                         android:id="@+id/extract_txt"
                         android:layout_width="wrap_content"
@@ -101,13 +103,14 @@
                         android:layout_marginEnd="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginStart="8dp"
-                        android:text="TextView"
+                        android:text="Extract"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/uninstall_txt"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toEndOf="@+id/open_txt" />
 
                     <TextView
+                        android:textColor="@color/primaryDarkColor"
                         android:textSize="15sp"
                         android:id="@+id/uninstall_txt"
                         android:layout_width="wrap_content"
@@ -116,7 +119,7 @@
                         android:layout_marginEnd="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginStart="8dp"
-                        android:text="TextView"
+                        android:text="Delete"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -178,6 +181,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:textColor="@color/primaryDarkColor"
                 android:id="@+id/favorite_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -193,6 +197,7 @@
                 app:layout_constraintTop_toBottomOf="@id/favorites" />
 
             <TextView
+                android:textColor="@color/primaryDarkColor"
                 android:id="@+id/hide_txt"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
@@ -231,15 +236,15 @@
             android:layout_marginBottom="8dp"
             android:drawableEnd="@drawable/ic_baseline_attachment_24"
             android:gravity="center_vertical"
-            android:text=" Your Text OverHere"
+            android:text=" open on googlePlay"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.705"
-            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/google_play"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/google_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -269,7 +274,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/size_bytes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -278,13 +283,13 @@
             android:layout_marginBottom="8dp"
             android:drawableEnd="@drawable/ic_baseline_sd_card_24"
             android:gravity="center_vertical"
-            android:text=" Your Text OverHere"
+            android:text="Your Text OverHere"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
-
+            app:layout_constraintHorizontal_bias="0.915"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>

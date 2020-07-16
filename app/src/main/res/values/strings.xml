@@ -123,4 +123,5 @@
 
     <!-- Toasts -->
     <string name="tap_exit">Tap again to close the app</string>
+    <string name="txt_no_extracted">You have no apps yet .start extracting to manage the APKS</string>
 </resources>

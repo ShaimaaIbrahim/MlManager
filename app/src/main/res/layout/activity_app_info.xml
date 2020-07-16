@@ -28,6 +28,7 @@
             app:toolbarId="@+id/toolbar">
 
             <LinearLayout
+                android:id="@+id/container_lin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/fab"
@@ -36,6 +37,7 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <ImageView
+                    android:transitionName="@string/transition_app_icon"
                     android:src="@drawable/ic_baseline_send_24"
                     tools:src="@drawable/ic_baseline_send_24"
                     android:id="@+id/profile_image"
@@ -56,7 +58,7 @@
 
                 <TextView
                     android:textSize="18sp"
-                    android:id="@+id/email_id"
+                    android:id="@+id/version"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -72,8 +74,6 @@
                 app:layout_collapseMode="pin"
                 app:navigationIcon="@drawable/ic_baseline_arrow_forward_24"
                 app:popupTheme="@style/AppTheme.PopupOverlay"/>
-
-
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>

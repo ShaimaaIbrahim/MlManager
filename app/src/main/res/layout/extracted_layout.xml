@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="extract"
+            type="com.example.newproject.utils.AppInfo" />
+    </data>
+<RelativeLayout
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        app:imageIcon="@{extract.icon}"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:foregroundGravity="center_vertical"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:orientation="vertical">
+
+        <TextView
+            appName="@{extract.name}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="udhgjhd"
+            android:textSize="18sp" />
+
+        <TextView
+            appApk="@{extract.apk}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="jksnkjs"
+            android:textSize="14dp" />
+
+        <TextView
+            appVersion="@{extract.version}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/ic_baseline_more_vert_24"
+        android:id="@+id/img_options"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <ImageView
+        android:src="@drawable/ic_baseline_delete_24"
+        android:id="@+id/img_delete"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/img_options"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+</RelativeLayout>
+</layout>
